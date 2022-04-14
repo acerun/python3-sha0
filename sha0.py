@@ -198,8 +198,8 @@ if __name__ == '__main__':
             if (os.path.isfile(argument)):
                 # An argument is given and it's a valid file. Read it
                 data = open(argument, 'rb')
-                
+
                 # Show the final digest
                 print('sha0-digest:', sha0(data))
             else:
-                print("Error, could not find " + argument + " file." )
+                print(f"Error, could not find {argument} file.")
